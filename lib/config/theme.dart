@@ -3,54 +3,50 @@ import 'package:flutter/material.dart';
 ThemeData theme() {
   return ThemeData(
     primaryColor: Color(0xFF2B2E4A),
-    // primaryColorDark: Color(0xFFFC0028),
-    // primaryColorLight: Color(0xFFFE9AAA),
-    accentColor: Color(0xFFE84545),
     scaffoldBackgroundColor: Colors.white,
-    backgroundColor: Color(0xFFF4F4F4),
 
     fontFamily: 'Optima',
     textTheme: TextTheme(
-      headline1: TextStyle(
+      displayLarge: TextStyle(
         color: Color(0xFF2B2E4A),
         fontWeight: FontWeight.bold,
         fontSize: 36,
       ),
-      headline2: TextStyle(
+      displayMedium: TextStyle(
         color: Color(0xFF2B2E4A),
         fontWeight: FontWeight.bold,
         fontSize: 24,
       ),
-      headline3: TextStyle(
+      displaySmall: TextStyle(
         color: Color(0xFF2B2E4A),
         fontWeight: FontWeight.bold,
         fontSize: 18,
       ),
-      headline4: TextStyle(
+      headlineMedium: TextStyle(
         color: Color(0xFF2B2E4A),
         fontWeight: FontWeight.bold,
         fontSize: 16,
       ),
-      headline5: TextStyle(
+      headlineSmall: TextStyle(
         color: Color(0xFF2B2E4A),
         fontWeight: FontWeight.bold,
         fontSize: 14,
       ),
-      headline6: TextStyle(
+      titleLarge: TextStyle(
         color: Color(0xFF2B2E4A),
         fontWeight: FontWeight.normal,
         fontSize: 14,
       ),
-      bodyText1: TextStyle(
+      bodyLarge: TextStyle(
         color: Color(0xFF2B2E4A),
         fontWeight: FontWeight.normal,
         fontSize: 12,
       ),
-      bodyText2: TextStyle(
+      bodyMedium: TextStyle(
         color: Color(0xFF2B2E4A),
         fontWeight: FontWeight.normal,
         fontSize: 10,
       ),
-    ),
+    ), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Color(0xFFE84545)).copyWith(background: Color(0xFFF4F4F4)),
   );
 }

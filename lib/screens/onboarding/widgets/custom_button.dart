@@ -17,7 +17,7 @@ class CustomButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(5),
         gradient: LinearGradient(
           colors: [
-            Theme.of(context).accentColor,
+            Theme.of(context).colorScheme.secondary,
             Theme.of(context).primaryColor,
           ],
         ),
@@ -27,7 +27,7 @@ class CustomButton extends StatelessWidget {
           tabController.animateTo(tabController.index + 1);
         },
         style: ElevatedButton.styleFrom(
-          primary: Colors.transparent,
+          backgroundColor: Colors.transparent,
           elevation: 0,
         ),
         child: Container(
@@ -37,7 +37,7 @@ class CustomButton extends StatelessWidget {
               text,
               style: Theme.of(context)
                   .textTheme
-                  .headline4!
+                  .headlineMedium!
                   .copyWith(color: Colors.white),
             ),
           ),

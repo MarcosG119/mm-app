@@ -78,7 +78,7 @@ class UsersScreen extends StatelessWidget {
                                   print('Swiped Right');
                                 },
                                 child: ChoiceButton(
-                                  color: Theme.of(context).accentColor,
+                                  color: Theme.of(context).colorScheme.secondary,
                                   icon: Icons.clear_rounded,
                                 ),
                               ),
@@ -122,23 +122,23 @@ class UsersScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('${user.name}, ${user.age}',
-                    style: Theme.of(context).textTheme.headline2),
+                    style: Theme.of(context).textTheme.displayMedium),
                 Text(
                   user.jobTitle,
                   style: Theme.of(context)
                       .textTheme
-                      .headline3!
+                      .displaySmall!
                       .copyWith(fontWeight: FontWeight.normal),
                 ),
                 SizedBox(height: 15),
-                Text('About', style: Theme.of(context).textTheme.headline3),
+                Text('About', style: Theme.of(context).textTheme.displaySmall),
                 Text(user.bio,
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1!
+                        .bodyLarge!
                         .copyWith(height: 2)),
                 SizedBox(height: 15),
-                Text('Interests', style: Theme.of(context).textTheme.headline3),
+                Text('Interests', style: Theme.of(context).textTheme.displaySmall),
                 Row(
                   children: user.interests
                       .map((interest) => Container(
@@ -149,7 +149,7 @@ class UsersScreen extends StatelessWidget {
                               gradient: LinearGradient(
                                 colors: [
                                   Theme.of(context).primaryColor,
-                                  Theme.of(context).accentColor,
+                                  Theme.of(context).colorScheme.secondary,
                                 ],
                               ),
                             ),
@@ -157,7 +157,7 @@ class UsersScreen extends StatelessWidget {
                               interest,
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline6!
+                                  .titleLarge!
                                   .copyWith(color: Colors.white),
                             ),
                           ))

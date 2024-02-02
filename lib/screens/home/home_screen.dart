@@ -64,7 +64,7 @@ class HomeScreen extends StatelessWidget {
                           print('Swiped Right');
                         },
                         child: ChoiceButton(
-                          color: Theme.of(context).accentColor,
+                          color: Theme.of(context).colorScheme.secondary,
                           icon: Icons.clear_rounded,
                         ),
                       ),
