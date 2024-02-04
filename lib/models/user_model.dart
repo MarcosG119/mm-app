@@ -25,7 +25,7 @@ class User extends Equatable {
   static List<User> users = [
     User(
       id: 1,
-      name: 'Anna',
+      name: 'Gay',
       age: 25,
       imageUrls: [
         'https://images.unsplash.com/photo-1587554801471-37976a256db0?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',

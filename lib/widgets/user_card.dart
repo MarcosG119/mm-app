@@ -72,7 +72,7 @@ class UserCard extends StatelessWidget {
                     Row(
                       children: [
                         UserImageSmall(url: user.imageUrls[1]),
-                        UserImageSmall(url: user.imageUrls[2]),
+                        UserImageSmall(url: user.imageUrls[2]), //hey
                         UserImageSmall(url: user.imageUrls[3]),
                         UserImageSmall(url: user.imageUrls[4]),
                         SizedBox(width: 10),

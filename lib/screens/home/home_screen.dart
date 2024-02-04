@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: 'DISCOVER'),
+      appBar: CustomAppBar(title: 'NETWORK'),
       body: BlocBuilder<SwipeBloc, SwipeState>(
         builder: (context, state) {
           if (state is SwipeLoading) {
